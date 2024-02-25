@@ -7,27 +7,32 @@
 		<title>AI Food Recipe Generator</title>
 	</head>
 	<body>
-		<header>AI Food Recipe Generator</header>
+		<div class="container">
+			<header><h1>AI Food Recipe Generator</h1></header>
 
-		<main>
-			<form>
-				<input
-					type="text"
-					placeholder="Enter the food recipe type"
-					autofocus
-					required
-					autocomplete="off" />
-				<input type="submit" />
-			</form>
-			<div id="recipe">The recipe will go here</div>
-		</main>
+			<main>
+				<form>
+					<input
+						type="text"
+						placeholder="Enter the food recipe type"
+						autofocus
+						required
+						autocomplete="off"
+						class="instructions" />
+					<input type="submit" class="submit-button" />
+				</form>
+				<div class="recipe">The recipe will go here <br />And here</div>
+			</main>
 
-		<footer>
-			This AI was coded by Aivy Nguyen and is opened-sourced on
-			<a href="https://github.com/aivy09/food-recipe-generator" target="_blank"
-				>Github</a
-			>
-		</footer>
+			<footer>
+				This AI was coded by Aivy Nguyen and is opened-sourced on
+				<a
+					href="https://github.com/aivy09/food-recipe-generator"
+					target="_blank"
+					>Github</a
+				>
+			</footer>
+		</div>
 		<script src="src/index.js"></script>
 	</body>
 </html>
