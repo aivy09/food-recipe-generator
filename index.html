@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=>, initial-scale=1.0" />
 		<link rel="stylesheet" href="src/style.css" />
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<title>AI Food Recipe Generator</title>
 	</head>
 	<body>
@@ -11,7 +12,7 @@
 			<header><h1>AI Food Recipe Generator</h1></header>
 
 			<main>
-				<form>
+				<form id="recipe-generator">
 					<input
 						type="text"
 						placeholder="Enter the food recipe type"
@@ -21,7 +22,7 @@
 						class="instructions" />
 					<input type="submit" class="submit-button" />
 				</form>
-				<div class="recipe">The recipe will go here <br />And here</div>
+				<div class="recipe" id="recipe"></div>
 			</main>
 
 			<footer>
