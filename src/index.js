@@ -18,6 +18,10 @@ function generateRecipe(event){
     let context = "You are a food fanatic and have cooked many food recipes over the years. Display just the recipe in a list and in HTML format. Include title of recipe at the top and a link to the recipe page at the bottom.";
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let recipeElement = document.querySelector("#recipe")
+    recipeElement.classList.remove("hidden");
+    recipeElement.innerHTML = `<div class="blink">Searching for a ${inputInstructions.value} recipe....</div>`;
+    
     axios.get(apiURL).then(displayRecipe);
 }
 
